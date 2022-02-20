@@ -4,3 +4,26 @@
     }
     
 }
+
+
+@media screen and (min-width:800px) {
+    
+    .sec1{
+        font-size: 25px;
+    }
+
+.perfil-img {
+    width: 350px;
+}
+   .perfil {
+       display: flex;
+       width: 50%;
+       flex-direction: row;
+       align-items: center;
+       text-align: center;
+   }
+
+   .perfil-description {
+       text-align: center;
+   }
+}
