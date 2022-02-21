@@ -1,29 +1,47 @@
-@media screen and (min-width:600px) {
-    .navbar2{
-        display: none;
-    }
-    
+@media screen and (min-width: 600px) {
+  .navbar2 {
+    display: none;
+  }
 }
 
+@media screen and (min-width: 1100px) {
+  .sec1 {
+    font-size: 29px;
+  }
 
-@media screen and (min-width:800px) {
-    
-    .sec1{
-        font-size: 25px;
-    }
-
-.perfil-img {
+  .perfil-img {
     width: 350px;
-}
-   .perfil {
-       display: flex;
-       width: 50%;
-       flex-direction: row;
-       align-items: center;
-       text-align: center;
-   }
+  }
+  .perfil {
+    display: flex;
+    width: 54%;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
 
-   .perfil-description {
-       text-align: center;
-   }
+  .perfil-3 {
+    text-align: left;
+  }
+  .text-description {
+    padding-left: 0;
+  }
+
+  .cargo {
+    margin: 0;
+    width: 120%;
+    border-radius: 0;
+  }
+  .cargo-box {
+    width: 120%;
+    border-radius: 0;
+    background: rgb(77,79,78);
+    background: linear-gradient(90deg, rgba(77,79,78,1) 0%, rgba(0,212,255,0) 100%);
+    padding-left: 5px;
+    border-bottom-left-radius:10px ;
+  }
+
+  .perfil-img{
+    margin-top: -50px;
+  }
 }

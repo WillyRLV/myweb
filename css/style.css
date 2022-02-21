@@ -17,9 +17,12 @@
   /*COLORES SECCION1*/
   --color_background: #2a2b2d;
   --color_title: #e0beb0;
-  --color_parr: #e0beb0;
-  --color_link_hover:#899094;
-  --color_link:#9e8474;
+  --color_subtitle: #DCAA92 ;
+  --color_parr: #C9AA94 ;
+  --color_link_hover: #899094;
+  --color_link: #9e8474;
+  /*COLORES GENERALES*/
+  --color_first:  #4d4f4e  ;
 }
 
 /*NAVAR-MOVIL*/
@@ -119,45 +122,50 @@
   transform: translateX(calc(66.5px * 4));
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
 /*PRINCIPAL-------------------------------------------------*/
-
-.sec1 {
-  font-family: "Poppins", sans-serif;
+.main {
   background-color: var(--color_background);
   height: 100vh;
   width: 100vw;
+}
+.sec1 {
+  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size:18px;
-  color: var(--color_title);
+  font-size: 18px;
+  
 }
 
 .name {
-  margin-bottom: 1em;
+  margin-bottom: 0.6em;
   font-size: 1.5em;
   text-transform: uppercase;
+  color: var(--color_title);
+
 }
+
 
 .perfil {
   display: flex;
   align-items: center;
   text-align: center;
   flex-direction: column-reverse;
-  
 }
-
-
-
 
 .perfil-img {
   border-radius: 50%;
+  margin-bottom: 1em;
 }
 
 .cargo {
   margin-top: 10px;
   font-size: 0.8em;
   text-transform: uppercase;
+  color: var(--color_subtitle);
 }
 
 .text-description {
@@ -165,21 +173,38 @@
   padding-left: 40px;
   padding-right: 40px;
   font-size: 0.6em;
- 
+  color: var(--color_parr);
 }
 
 .media ul li {
-    display: inline-flex;
-    font-size: 1.4em;
-    margin: 10px 20px;
-    list-style: none;
-
+  display: inline-flex;
+  font-size: 1.4em;
+  margin: 10px 20px;
+  list-style: none;
 }
-.link:hover{
-    color: var(--color_link_hover);
-
+.link:hover {
+  color: var(--color_link_hover);
 }
 
 .link {
-    color: var(--color_link);
+  color: var(--color_link);
+}
+
+.cargo-box{
+  background-color: red;
+  background-color: var(--color_first);
+  width: 40%;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin: auto;
+}
+
+
+/*ABOUT...............................*/
+
+.about {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: wheat;
 }
