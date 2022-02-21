@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /*variables colores*/
 
@@ -193,7 +196,7 @@
 .cargo-box{
   background-color: red;
   background-color: var(--color_first);
-  width: 40%;
+  width: 50%;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
   margin: auto;
