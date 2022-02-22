@@ -9,6 +9,13 @@ html{
   scroll-behavior: smooth;
 }
 
+#particles-js{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
 /*variables colores*/
 
 :root {
@@ -40,7 +47,7 @@ html{
   transition: 0.5s;
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
-  z-index: 30;
+  z-index: 20;
   bottom: 0%;
 }
 
@@ -140,7 +147,7 @@ html{
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  
+  z-index: 99;
 }
 
 .name {
@@ -157,6 +164,7 @@ html{
   align-items: center;
   text-align: center;
   flex-direction: column-reverse;
+  z-index: 100;
 }
 
 .perfil-img {
