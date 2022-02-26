@@ -233,8 +233,7 @@ img {
   color: wheat;
   z-index: 19;
   background-color: var(--color-three);
-min-height: 120vh;
-  height: auto;
+  height: 100vh;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -246,14 +245,16 @@ min-height: 120vh;
   display: flex;
   flex-wrap: wrap;
   z-index: 1;
+  gap: 20px;
 
 }
 
 .card {
+  position: relative;
   background: #fff;
   display: flex;
   width: 300px;
-  height: 400px;
+  height: 350px;
   flex-direction: column;
   box-shadow: 12px 19px 20px -11px rgba(0,0,0,0.75);
 
