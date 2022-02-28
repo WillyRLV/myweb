@@ -10,22 +10,18 @@
     display: grid;
     align-content: center;
     border-radius: 1.25rem 1.25rem 0 0;
-    transition: .5s;
+    transition: 0.5s;
   }
 
-  .nav__link{
-  color: var(--color_first);
+  .nav__link {
+    color: var(--color_first);
   }
 
   .active-link {
     position: relative;
     color: var(--color-three);
     transition: 0.3s;
-  
   }
- .portf {
-   height: 290vh;
- }
 
 }
 
@@ -42,7 +38,6 @@
     flex-direction: row;
     align-items: center;
     text-align: center;
-  
   }
 
   .perfil-3 {
@@ -60,98 +55,105 @@
   .cargo-box {
     width: 120%;
     border-radius: 0;
-    background: rgb(77,79,78);
-    background: linear-gradient(90deg, rgba(77,79,78,1) 0%, rgba(0,212,255,0) 100%);
+    background: rgb(77, 79, 78);
+    background: linear-gradient(
+      90deg,
+      rgba(77, 79, 78, 1) 0%,
+      rgba(0, 212, 255, 0) 100%
+    );
     padding-left: 5px;
-    border-bottom-left-radius:10px ;
+    border-bottom-left-radius: 10px;
   }
 
-  .perfil-img{
+  .perfil-img {
     margin-top: -50px;
   }
 }
 
-
 /*PARA DISPOSITIVOS MEDIOS*/
 @media screen AND (min-width: 576px) {
-  .nav__list{
+  .nav__list {
     justify-content: center;
-    column-gap: 6rem;
+    align-items: center;
+    column-gap: 50px;
   }
-  
-  
-  .i{
+
+  .i {
     display: none;
   }
+}
+
+/*responsive cards*/
+
+@media screen and (min-width: 1000px) {
 
   .container2 {
-    position: relative;
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 80px;
-z-index: 1;
- 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px;
   }
-
   .card {
-    height: 245px;
     position: relative;
-    background: #fff;
-    display: flex;
-    width: 390px;
-    box-shadow: 12px 19px 20px -11px rgba(0,0,0,0.75);
-
-
-  }
-  .card:hover .imgBx{
-    width: 200px;
-    height: 124px;
-    left: -95px;
-    top:calc(55% - 75px);
-    transform: rotate(360deg);
-    opacity: 0.9;
-    
-  }
-  
-  .h2{
-    position: absolute;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
-    top: -200px;
-    display: flex;
+    width: 400px;
+    height: 270px;
+    background-color: red;
+    font-size: 0.8em;
+  }
 
+  .card:hover .imgBx {
+    width: 170px;
+    height: 100px;
+    left: -70px;
+    top: calc(60% - 80px);
+  }
+
+  .content h3,
+  .content p,
+  .content a {
+    text-align: start;
+    margin-bottom: 20px;
+    
   
   }
 
-  .imgBx{
-    position: absolute;
-    transition: 0.5s ease-in-out;
-    width: 100%;
-    height: 100%;
+  .imgBx {
     top: 0;
     left: 0;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
     z-index: 3;
-  
-  
+    overflow: hidden;
+    border-radius: 9px !important;
+  }
+
+  .content {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 90px);
+    height: 100%;
+    padding: 30px;
+    color: black;
+    margin-top: 90px;
+  }
+
+  .imgBx img {
+    width: 100%;
+  }
 }
 
-.content {
-  position: absolute;
-  right: 0;
-  width: calc(100% - 90px);
-  height: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  margin-top: 0;
-
+@media screen and (min-width: 1450px) {
+ 
+  .container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+    padding: 12em;
+  }
 }
 
-
-
-
-}
+/*SECTION 2*/

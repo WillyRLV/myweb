@@ -46,7 +46,6 @@ html {
 }
 
 body {
-  margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--color-two);
@@ -61,10 +60,10 @@ a {
   text-decoration: none;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 
@@ -228,76 +227,63 @@ img {
 
 .portf {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  color: wheat;
   z-index: 19;
   background-color: var(--color-three);
-  height: 100vh;
   font-family: 'Poppins', sans-serif;
+  height: auto;
+}
+
+.portf h2 {
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 /*CARDS*/
 
 .container2 {
-  position: relative;
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  z-index: 1;
-  gap: 20px;
-
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+padding-top: 3em;
+  padding-bottom:4em ;
 }
 
 .card {
   position: relative;
-  background: #fff;
-  display: flex;
-  width: 300px;
-  height: 350px;
   flex-direction: column;
-  box-shadow: 12px 19px 20px -11px rgba(0,0,0,0.75);
-
+  display: flex;
+  border-radius: 9px;
+  width: 300px;
+  background-color: rgb(184, 184, 132) !important;
+  font-size: 11px;
+  z-index: 29;
 }
 
-.h2{
+.imgBx {
   position: relative;
-  justify-content: center;
-  text-align: center;
   display: flex;
-
+  justify-content: center;
+  z-index: 3;
+  overflow: hidden;
+  width: 100%;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+.imgBx img {
+  width: 100%;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
- justify-content: center;
- text-align: center;
- margin-top: 30px;
- color: black;
-}
-
-/*IMG*/
-.imgBx{
   position: relative;
   display: flex;
-  overflow: hidden;
-  
-  
- 
-}
-
-.content h3{
-  font-size: 1.5em;
-  text-transform: uppercase;
-}
-
-.content a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 5px 10px;
-  text-decoration: none;
-  background-color: red;
-  border-radius: 8px;
+  flex-direction: column;
+  padding: 30px;
+  margin: 0;
+  color: black;
+  text-align: center;
 }
 

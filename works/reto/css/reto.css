@@ -44,13 +44,11 @@ h4 {
 
 .img_over {
   position: absolute;
-  display: inline-block;
+  display: flex;
   background-color: hsla(178, 100%, 50%, 0.541); ;
   width: 260px;
   height: 260px;
   border-radius: 5px;
-  top: 257px;
-  left: 830px;
   opacity: 0;
   transition: 0.5s;
   cursor: pointer;
