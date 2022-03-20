@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+}
+
+.header {
+    background: url(../img/desktop/image-header.jpg);
+    height: 75vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:bottom ;
+ 
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav div {
+    padding: 20px;
+
+}
+
+.menu-nav{
+    display: flex;
+    list-style: none;
+}
+
+.menu-nav li {
+    padding-right: 50px;
+}
+
+.menu-nav li a {
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.btn-contact {
+    font-family: "Fraunces", sans-serif;
+    background-color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right:15px;
+    color: black !important;
+    border-radius: 20px;
+    font-weight: 600;
+
+}
+
+.content-title  {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    
+}
+
+.content-title h1 {
+    font-size: 100px;
+    font-family: "Fraunces" , sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    letter-spacing: 10px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto  ;
+    grid-template-rows: 60vh 60vh 60vh 80vh 60vh;
+    /* antes grid-template-columns: auto auto;
+    grid-template-rows: 50vh 50vh 50vh; */
+    grid-template-areas:
+      /* "antes" "transform transform-image"
+      "standout-image standout"
+      "cherry oranges"; */
+    "transform      transform      transform-image transform-image"
+    "standout-image standout-image standout        standout"
+    "cherry         cherry         oranges          oranges"
+    "testimonial    testimonial    testimonial     testimonial"
+    "milk           orange-plate   ice             build";
+  
+  }
+  
+
+.grid-container div {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+  .item1 {
+    grid-area: transform;
+  }
+  
+  .item2 {
+    background-color: hsl(51, 100%, 49%) !important;
+    background: url("../img/desktop/image-transform.jpg");
+    grid-area: transform-image;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+  }
+  
+  .item3 {
+    background-color: hsl(7, 99%, 70%) !important;
+    background: url("../img/desktop/image-stand-out.jpg");
+    grid-area: standout-image;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+  }
+  
+  .item4 {
+    grid-area: standout;
+  }
+  
+  .container-text {
+    /* display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center; */
+    width: 40%;
+    margin: auto;
+  }
+
+  .container-text h2 {
+      font-family: "Fraunces", serif;
+      font-size: 2.2em;
+  }
+  .container-text * {
+      margin-bottom: 1em;
+  } 
+
+  .container-text p {
+      color:  hsl(213, 9%, 39%);
+  }
+
+  .container-text a {
+      font-family: "Fraunces", serif;
+      color: black ;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+
+  .learn-yellow {
+    border-bottom: solid 5px hsl(51, 100%, 49%);
+  }
+  
+  .learn-red {
+    border-bottom: solid 5px hsl(7, 99%, 70%);
+  }
+
+
+  .container-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+   
+  }
+  
+  .container-text-bottom * {
+    margin-bottom: 40px;
+  }
+  
+  .container-text-bottom h3 {
+    font-family: "Fraunces", serif;
+    font-weight: 600;
+    color: hsl(213, 9%, 39%);
+  }
+
+  .letter-green {
+    color: #24544c;
+  }
+  
+  .letter-blue {
+    color: #19566d;
+  }
+  
+  .container-text-bottom p {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    color: hsl(213, 9%, 39%);
+  }
+
+
+
+  
+
+  .item5 {
+    background-color: rgb(151, 214, 199) !important;
+    background: url("../img/desktop/image-graphic-design.jpg");
+    grid-area: cherry;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+  }
+  
+  .item6 {
+    background-color: rgb(78, 191, 255) !important;
+    background: url("../img/desktop/image-photography.jpg");
+    grid-area: oranges;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; */
+  }
+
+  .item8 {
+    grid-area: milk;
+    background: url("../img/desktop/image-gallery-milkbottles.jpg");
+  }
+  
+  .item9 {
+    grid-area: orange-plate;
+    background: url("../img/desktop/image-gallery-orange.jpg");
+  }
+  
+  .item10 {
+    grid-area: ice;
+    background: url("../img/desktop/image-gallery-cone.jpg");
+  }
+  
+  .item11 {
+    grid-area: build;
+    background: url("../img/desktop/image-gallery-sugarcubes.jpg");
+  }
+  
+  .item7 {
+    grid-area: testimonial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+  }
+  
+  .item7 * {
+    margin-bottom: 10px;
+  }
+  
+  .container-testimonial {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+
+  }
+
+  .container-testimonial div {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .title-testimonial {
+    font-family: "Fraunces", serif;
+    font-size: 1.3em;
+    font-weight: 900;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: hsl(210, 4%, 67%);
+    margin-bottom: 50px;
+  }
+
+  /*testimonial titles*/
+  .item img {
+    border-radius: 50%;
+    width: 80px;
+  }
+
+  .item p {
+    color: hsl(212, 27%, 19%);
+  margin-bottom: 60px;
+  }
+  .item h2 {
+    font-family: "Fraunces", serif;
+  }
+
+  .item span{
+    color: rgb(165, 164, 164);
+  }
+
+  /*footer*/
+
+  .footer{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+  background-color: hsl(168, 37%, 45%);
+}
+
+.footer h1 {
+  
+  font-weight: bold;
+  font-size: 30px;
+  color: #24544c;
+  letter-spacing: 1px;
+}
+
+.menu-nav2 {
+width: 500px;
+  display: flex;
+  justify-content: space-around;
+
+}
+.menu-nav2 a {
+  color: #24544c;
+}
+.div-redes{
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.div-redes li:hover, .menu-nav2 a:hover {
+  filter: brightness(900%);
+  transition: 0.5s;
+}
+
+
+
+

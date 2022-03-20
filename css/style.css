@@ -12,9 +12,9 @@
 
   /*COLORES SECCION1*/
   --color_background: #2a2b2d;
-  --color_title: #e0beb0;
-  --color_subtitle: #dcaa92;
-  --color_parr: #c9aa94;
+  --color_font_one: #e0beb0;
+  --color_font_two: #dcaa92;
+  --color_font_three: #c9aa94;
   --color_link_hover: #899094;
   --color_link: #9e8474;
   /*COLORES GENERALES*/
@@ -48,7 +48,7 @@ html {
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--color-two);
+  background-color: var(--color_background);
   color: var(--text-color);
 }
 
@@ -80,13 +80,14 @@ a {
   align-items: center;
   font-size: 18px;
   z-index: 99;
+ 
 }
 
 .name {
   margin-bottom: 0.6em;
   font-size: 1.5em;
-  text-transform: uppercase;
-  color: var(--color_title);
+
+  color: var(--color_font_one);
 }
 
 .perfil {
@@ -107,7 +108,7 @@ a {
   margin-top: 10px;
   font-size: 0.8em;
   text-transform: uppercase;
-  color: var(--color_subtitle);
+  color: var(--color_font_two);
 }
 
 .text-description {
@@ -115,7 +116,7 @@ a {
   padding-left: 40px;
   padding-right: 40px;
   font-size: 0.6em;
-  color: var(--color_parr);
+  color: var(--color_font_three);
 }
 
 .media ul li {
@@ -161,7 +162,6 @@ a {
   align-items: center;
   width: 90%;
   margin: auto;
-
 }
 
 .nav__img {
@@ -190,7 +190,9 @@ a {
 }
 
 .nav__list {
+
   justify-content: space-around;
+  font-size: 0.8em;
 }
 
 .nav__name {
@@ -204,7 +206,6 @@ a {
 
 /*Active link*/
 .active-link {
-  position: relative;
   color: var(--color_nav);
   transition: 0.3s;
 }
@@ -213,15 +214,49 @@ a {
 
 .about {
   display: flex;
+  font-size: 13px;
 
   justify-content: center;
   align-items: center;
   text-align: center;
   color: wheat;
-  z-index: 19;
-  background-color: var(--color-two);
- 
+  background-color: var(--color_background);
+  font-family:'Poppins', sans-serif;
+  
 }
+
+
+.aboutme{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  width: 50%;
+  z-index: 2;
+  margin: auto;
+}
+
+.datas {
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+  padding-left: 80px;
+  padding-right: 120px;
+  gap: 15px;
+}
+
+.datas h2 {
+  text-align: start;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.datas p {
+  font-size: 1.2em;
+  font-family: 600;
+}
+
+
 
 /*PORTAFOLIO...............................*/
 
@@ -231,13 +266,14 @@ a {
   justify-content: space-between;
   align-items: center;
   z-index: 19;
-  background-color: var(--color-three);
-  font-family: 'Poppins', sans-serif;
+  background-color: var(--color_background);
+  font-family: "Poppins", sans-serif;
   height: auto;
 }
 
 .portf h2 {
-  margin-top: 50px;
+  color: var(--color_font_three);
+  margin-top: 90px;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -248,8 +284,8 @@ a {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
-padding-top: 3em;
-  padding-bottom:4em ;
+  padding-top: 3em;
+  padding-bottom: 4em;
 }
 
 .card {
@@ -257,10 +293,13 @@ padding-top: 3em;
   flex-direction: column;
   display: flex;
   border-radius: 9px;
-  width: 300px;
-  background-color: rgb(184, 184, 132) !important;
+  width: 250px;
+  background-color: var(--color_indic) !important;
   font-size: 11px;
   z-index: 29;
+  height: 350px;
+  box-shadow: 0px 3px 16px 0px var(--color_background);
+  
 }
 
 .imgBx {
@@ -272,18 +311,59 @@ padding-top: 3em;
   width: 100%;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
+
 }
 .imgBx img {
   width: 100%;
 }
 
 .content {
-  position: relative;
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  margin: 0;
-  color: black;
+  position: relative;
+  padding: 20px;
   text-align: center;
+  font-weight: bold;
 }
 
+.content h3 {
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+.content p {
+  margin-bottom: 30px;
+  color: var(--color_border_ind);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.content a {
+  color: var(--color_border_ind);
+
+  position: relative;
+  background-color: var(--color_link);
+  border-radius: 5px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.content a:hover {
+  color: var(--color_first);
+
+}
+
+
+
+/* .box {
+
+  background-color: ;
+  border-radius: 6px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px;
+  width: 100px;
+  cursor: pointer;
+ 
+ 
+} */
