@@ -21,6 +21,12 @@
   --color_first: #4d4f4e;
   --color-two: #4d4f4e;
   --color-three: #635454;
+
+  /*INDEX*/
+  --zindex-1: 1;
+  --zindex-2: 2;
+  --zindex-3: 3;
+  --zindex-0: 0;
 }
 
 ::-webkit-scrollbar {
@@ -32,7 +38,7 @@
   height: 100vh;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: var(--zindex-1);
 }
 
 * {
@@ -79,8 +85,6 @@ a {
   justify-content: center;
   align-items: center;
   font-size: 18px;
-  z-index: 99;
- 
 }
 
 .name {
@@ -95,7 +99,7 @@ a {
   align-items: center;
   text-align: center;
   flex-direction: column-reverse;
-  z-index: 100;
+  z-index: var(--zindex-2);
 }
 
 .perfil-img {
@@ -190,7 +194,6 @@ a {
 }
 
 .nav__list {
-
   justify-content: space-around;
   font-size: 0.8em;
 }
@@ -215,67 +218,79 @@ a {
 .about {
   display: flex;
   font-size: 13px;
+  justify-content: center;
+  align-items: center;
+  color: wheat;
+  background-color: var(--color_background);
+  font-family: "Poppins", sans-serif;
+}
 
+.aboutme {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: wheat;
-  background-color: var(--color_background);
-  font-family:'Poppins', sans-serif;
-  
-}
-
-
-.aboutme{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: start;
-  width: 50%;
-  z-index: 2;
-  margin: auto;
+  z-index: var(--zindex-2);
+  width: 80%;
 }
 
 .datas {
   display: flex;
   flex-direction: column;
-justify-content: center;
-  padding-left: 80px;
-  padding-right: 120px;
-  gap: 15px;
+  gap: 18px;
 }
 
-.datas h2 {
-  text-align: start;
-  font-size: 2.5em;
-  text-transform: uppercase;
+.titleme {
+  position: relative;
+  width: 230px;
+  margin: auto;
 }
-
-.datas p {
-  font-size: 1.2em;
-  font-family: 600;
+.titleme::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto -8px auto;
+  height: 4px;
+  width: 40%;
+  background-color: var(--color_font_one);
 }
-
-
 
 /*PORTAFOLIO...............................*/
 
 .portf {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  z-index: 19;
   background-color: var(--color_background);
   font-family: "Poppins", sans-serif;
   height: auto;
 }
 
-.portf h2 {
+.h2 {
+  position: relative;
   color: var(--color_font_three);
-  margin-top: 90px;
   text-transform: uppercase;
   font-weight: bold;
+  z-index: var(--zindex-2);
+  margin-top: 80px;
+}
+
+.h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: var(--color_nav);
+  margin-bottom: -8px;
 }
 
 /*CARDS*/
@@ -286,6 +301,7 @@ justify-content: center;
   gap: 30px;
   padding-top: 3em;
   padding-bottom: 4em;
+  z-index: var(--zindex-2);
 }
 
 .card {
@@ -296,10 +312,8 @@ justify-content: center;
   width: 250px;
   background-color: var(--color_indic) !important;
   font-size: 11px;
-  z-index: 29;
   height: 350px;
   box-shadow: 0px 3px 16px 0px var(--color_background);
-  
 }
 
 .imgBx {
@@ -311,7 +325,6 @@ justify-content: center;
   width: 100%;
   border-top-left-radius: 9px;
   border-top-right-radius: 9px;
-
 }
 .imgBx img {
   width: 100%;
@@ -349,10 +362,7 @@ justify-content: center;
 
 .content a:hover {
   color: var(--color_first);
-
 }
-
-
 
 /* .box {
 
